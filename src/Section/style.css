@@ -1,0 +1,30 @@
+.section {
+    background-color: white;
+    margin-top: 10px;
+}
+
+.section--tasks {
+    min-height: 180px;
+}
+
+.section__header {
+    padding: 20px;
+    margin: 0;
+    border-bottom: solid 2px #e0e0e0;
+}
+
+.section__header-second {
+    border: none;
+}
+
+.section__container {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    border-bottom: solid 2px #e0e0e0;
+}
+
+@media (max-width: 768px) {
+    .section__container {
+        grid-template-columns: 1fr;
+    }
+}
