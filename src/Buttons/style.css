@@ -1,15 +1,15 @@
-.section__buttonsContainer {
+.buttons {
     align-self: center;
     
 }
 @media (max-width: 768px) {
-    .section__buttonsContainer {
+    .buttons {
         display: grid;
         grid-template-columns: 1fr;
     }
 }
 
-.section__button {
+.buttons__button {
     color: teal;
     background: none;
     border: none;
@@ -18,10 +18,10 @@
     transition: color 1s;
 }
 
-.section__button:hover {
+.buttons__button:hover {
     color: hsl(180, 100%, 35%);
 }
 
-.section__button:disabled{
+.buttons__button:disabled{
     color: #e0e0e0;
 }
