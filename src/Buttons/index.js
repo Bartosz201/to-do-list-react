@@ -17,7 +17,6 @@ const Buttons = ({ tasks, hideDoneTasks, toggleHideDone, toggleDoneAll }) => {
             className="buttons__button">
             Ukończ wszystkie
         </button>
-
     </div>)
 };
 

@@ -6,9 +6,6 @@ import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container";
 
-
-
-
 function App() {
   const [hideDoneTasks, setHideDone] = useState(false);
   const [tasks, setTasks] = useState([
@@ -18,10 +15,10 @@ function App() {
 
   const toggleHideDone = () => {
     setHideDone(hideDoneTasks => !hideDoneTasks)
-  }
+  };
   const removeTask = (id) => {
     setTasks(tasks => tasks.filter(task => task.id !== id));
-  }
+  };
   const toggleDoneTask = (id) => {
     setTasks(tasks => tasks.map(task => {
       if (task.id === id) {
@@ -29,10 +26,10 @@ function App() {
       }
       return task
     }))
-  }
+  };
   const toggleDoneAll = () => {
     setTasks(tasks => tasks.map(task => ({ ...task, done: true })))
-  }
+  };
   const addNewTask = (content) => {
     setTasks(tasks => [
       ...tasks,
@@ -41,7 +38,7 @@ function App() {
         done: false,
         id: tasks.length === 0 ? 1 : tasks[tasks.length - 1].id + 1,
       }])
-  }
+  };
 
   return (
     <Container>
@@ -65,6 +62,6 @@ function App() {
       />
     </Container>
   );
-}
+};
 
 export default App;

@@ -10,7 +10,7 @@ const Form = ({ addNewTask }) => {
             addNewTask(newTaskContent.trim());
         }
         setNewTask("");
-    }
+    };
 
     return (
         <form className="form" onSubmit={onFormSubmit}>
