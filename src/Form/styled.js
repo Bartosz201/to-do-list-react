@@ -1,35 +1,35 @@
-.form {
+import styled from "styled-components";
+
+export const StyledForm = styled.form`
     display: grid;
     grid-template-columns: 1fr auto;
     grid-column-gap: 20px;
     padding: 20px;
-}
 
-@media (max-width: 767px) {
-    .form {
+    @media (max-width: 767px) {
         grid-template-columns: 1fr;
         grid-row-gap: 15px;
-    }
-}
+};
+`;
 
-.form__input {
+export const Input = styled.input`
     padding: 8px;
     border: solid 2px #e0e0e0;
-}
+`;
 
-.form__button {
+export const Button = styled.button`
     padding: 10px;
     background-color: teal;
     color: white;
     border: none;
     transition: background 1s, transform 0.5s;
-}
 
-.form__button:hover {
-    background-color: hsl(180, 100%, 30%);
+    &:hover{
+        background-color: hsl(180, 100%, 30%);
     transform: scale(1.1);
-}
+    };
 
-.form__button:active {
-    background-color: hsl(180, 100%, 35%);
-}
+    &:active{
+        background-color: hsl(180, 100%, 35%);
+    };
+`;
