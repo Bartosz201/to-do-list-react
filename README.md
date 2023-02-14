@@ -12,8 +12,8 @@ This is a web application to creating simple list. User can add or remove list e
 - Open Graph
 - Grid
 - React
+- styled-components
 ## Used conventions:
-- BEM
 - Immutability
 
 ## Available Scripts
