@@ -9,7 +9,7 @@ export const StyledForm = styled.form`
     @media (max-width: 767px) {
         grid-template-columns: 1fr;
         grid-row-gap: 15px;
-};
+    };
 `;
 
 export const Input = styled.input`
