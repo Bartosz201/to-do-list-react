@@ -1,7 +1,8 @@
 import { HashRouter, Route, Switch } from "react-router-dom";
 import AuthorPage from "./common/AuthorPage";
 import Navigation from "./common/Navigation";
-import TasksPage from "./features/tasks/Tasks";
+import TaskPage from "./features/tasks/TaskPage";
+import TasksPage from "./features/tasks/TasksPage";
 
 const App = () => (
     <HashRouter>
@@ -11,6 +12,9 @@ const App = () => (
         ]} />
 
         <Switch>
+            <Route path={"/zadania/:id"}>
+                <TaskPage />
+            </Route>
             <Route path={"/zadania"}>
                 <TasksPage />
             </Route>

@@ -1,7 +1,8 @@
 import Container from "../Container";
 import Header from "../Header";
 import Section from "../Section";
-import { TextWraper } from "./styled";
+import { TextWraper } from "../TextWraper";
+
 
 
 const AuthorPage = () =>(
