@@ -7,11 +7,11 @@ import Header from "../../common/Header";
 import Container from "../../common/Container";
 import AddExampleTasksButton from "./AddExampleTaskButton";
 
-function Tasks() {
+function TasksPage() {
 
   return (
     <Container>
-      <Header />
+      <Header title={"Lista zadań"}/>
       <Section
         title="Dodaj nowe zadanie"
         body={<Form />}
@@ -27,4 +27,4 @@ function Tasks() {
   );
 };
 
-export default Tasks;
+export default TasksPage;

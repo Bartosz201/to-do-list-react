@@ -12,7 +12,5 @@ body {
   font-family: Montserrat, sans-serif;
   line-height: 1.5;
   background-color: #eee;
-  max-width: 1000px;
-  margin: 0 auto;
   word-break: break-word;
 }

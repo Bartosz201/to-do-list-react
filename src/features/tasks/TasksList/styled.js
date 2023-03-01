@@ -20,8 +20,8 @@ export const Item = styled.li`
 export const Content = styled.span`
     flex-grow: 1;
 
-    ${({ done }) => done && css`
-        text-decoration: line-through;
+     ${({ done }) => done && css`
+       text-decoration: line-through;
     `};
 `;
 
