@@ -60,6 +60,17 @@ export const selectTasks = state => selectTasksState(state).tasks;
 export const selectHideDone = state => selectTasksState(state).hideDone;
 export const selectAllTasksDone = state => selectTasks(state).every(({ done }) => done);
 export const selectTasksAreEmpty = state => selectTasks(state).length === 0;
-export const selectDownloadStatus = state => selectTasksState(state).downloadStatus
+export const selectDownloadStatus = state => selectTasksState(state).downloadStatus;
 export const selectTaskById = (state, taskId) => selectTasks(state).find(({id}) => id === taskId);
+
+export const selectTaskByQuery = (state, query) => {
+    const tasks = selectTasks(state)
+
+    if(!query || query.trim() === ""){
+        return tasks;
+    }
+
+    return tasks.filter(({content}) => content.includes(query.trim()));
+};
+
 export default tasksSlice.reducer;
