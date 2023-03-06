@@ -7,7 +7,7 @@ import { TextWraper } from "../../common/TextWraper"
 import { selectTaskById } from "./taskSlice"
 
 
-const TaskPage = () =>{
+const TaskPage = () => {
     const params = useParams();
 
     const task = useSelector(state => selectTaskById(state, params.id))
@@ -16,8 +16,8 @@ const TaskPage = () =>{
         <Container>
             <Header title={"Szczegóły zadania"} />
             <Section
-            title={task.content}
-            body={<TextWraper>Ukończone: {task.done?"Tak":"Nie"}</TextWraper>}
+                title={task ? task.content : "Nie znaleziono zadania"}
+                body={task ? <TextWraper>Ukończone: {task.done ? "Tak" : "Nie"}</TextWraper> : ""}
             />
         </Container>
     )
